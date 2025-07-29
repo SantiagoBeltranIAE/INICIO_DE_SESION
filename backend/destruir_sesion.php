@@ -12,53 +12,7 @@ session_destroy();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sesión Destruida</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 500px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        .mensaje {
-            background-color: #f8d7da;
-            color: #721c24;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
-        .boton {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin: 10px;
-        }
-        .boton:hover {
-            background-color: #45a049;
-        }
-        .codigo {
-            background-color: #f8f8f8;
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
-            font-family: 'Courier New', monospace;
-            text-align: left;
-            margin: 20px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -80,12 +34,12 @@ session_destroy();
             </pre>
         </div>
         
-        <div style="margin-top: 30px;">
+        <div class="text-center mt-30">
             <a href="formulario.html" class="boton">Crear Nueva Sesión</a>
             <a href="ver_sesion.php" class="boton">Verificar Sesión</a>
         </div>
         
-        <div style="background-color: #e7f3ff; padding: 15px; border-radius: 5px; margin-top: 20px; text-align: left;">
+        <div class="info-box-left">
             <h3>¿Qué hace session_destroy()?</h3>
             <ul>
                 <li>Elimina todas las variables de $_SESSION</li>
