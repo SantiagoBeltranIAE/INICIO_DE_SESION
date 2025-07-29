@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Variables de Sesión</title>
+    <link rel="stylesheet" href="ver_sesion.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Variables de Sesión Activas</h1>
+        <div id="sesion-info" class="sesion-info" style="display:none;">
+            <h2>Variables encontradas:</h2>
+            <ul id="session-list"></ul>
+            <p><strong>Total de variables:</strong> <span id="total-vars"></span></p>
+            <p><strong>ID de sesión:</strong> <span id="session-id"></span></p>
+        </div>
+        <div id="no-sesion" class="no-sesion" style="display:none;">
+            <h2>No hay variables de sesión</h2>
+            <p>Aún no se han creado variables de sesión. Puedes crear algunas llenando el formulario.</p>
+        </div>
+        <div class="text-center mt-30">
+            <a href="formulario.html" class="boton">Ir al Formulario</a>
+            <a href="procesar.php" class="boton">Ver Procesador</a>
+            <a href="destruir_sesion.php" class="boton boton-rojo">Destruir Sesión</a>
+        </div>
+    </div>
+    <script src="ver_sesion.js"></script>
+</body>
+</html>

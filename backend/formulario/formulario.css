@@ -31,7 +31,7 @@ input[type="text"], input[type="email"] {
     border-radius: 5px;
     box-sizing: border-box;
 }
-button, .boton {
+button {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
@@ -40,55 +40,14 @@ button, .boton {
     cursor: pointer;
     width: 100%;
     font-size: 16px;
-    text-decoration: none;
-    display: inline-block;
-    margin: 10px 5px;
+    margin: 10px 0;
 }
-button:hover, .boton:hover {
+button:hover {
     background-color: #45a049;
 }
-.boton-rojo {
-    background-color: #f44336;
-}
-.boton-rojo:hover {
-    background-color: #da190b;
-}
-.info, .sesion-info, .mensaje {
+.info-box {
     background-color: #e7f3ff;
     padding: 15px 20px;
     border-radius: 5px;
     margin: 20px 0;
-}
-.datos {
-    background-color: #d4edda;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px 0;
-}
-.codigo {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 5px;
-    font-family: 'Courier New', monospace;
-    margin: 20px 0;
-    text-align: left;
-}
-.no-sesion {
-    background-color: #f8d7da;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px 0;
-    color: #721c24;
-}
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-li {
-    background-color: #f9f9f9;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 3px;
-    border-left: 4px solid #4CAF50;
 }

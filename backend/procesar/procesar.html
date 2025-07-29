@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesando - Variables de Sesión</title>
+    <link rel="stylesheet" href="procesar.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¡Datos Guardados en Sesión!</h1>
+        <div class="datos">
+            <h2>Información guardada:</h2>
+            <ul>
+                <li><strong>Nombre:</strong> <span id="nombre"></span></li>
+                <li><strong>Email:</strong> <span id="email"></span></li>
+                <li><strong>Edad:</strong> <span id="edad"></span> años</li>
+                <li><strong>Fecha de registro:</strong> <span id="fecha_registro"></span></li>
+            </ul>
+            <p><strong>ID de sesión:</strong> <span id="session_id"></span></p>
+        </div>
+        <div class="codigo">
+            <h3>Código PHP utilizado:</h3>
+            <pre>
+// Iniciar sesión
+session_start();
+
+// Guardar datos en variables de sesión
+$_SESSION['nombre'] = $_POST['nombre'];
+$_SESSION['email'] = $_POST['email'];
+$_SESSION['edad'] = $_POST['edad'];
+
+// Mostrar datos
+echo $_SESSION['nombre'];
+            </pre>
+        </div>
+        <div class="text-center mt-30">
+            <a href="formulario.html" class="boton">Nuevo Registro</a>
+            <a href="ver_sesion.php" class="boton">Ver Todas las Variables</a>
+            <a href="destruir_sesion.php" class="boton boton-rojo">Destruir Sesión</a>
+        </div>
+        <div class="info-box">
+            <h3>¿Qué aprendimos?</h3>
+            <ul>
+                <li><strong>session_start():</strong> Inicia o reanuda una sesión</li>
+                <li><strong>$_SESSION:</strong> Array donde guardamos nuestros datos</li>
+                <li><strong>$_POST:</strong> Datos que vienen del formulario</li>
+                <li>Los datos de sesión persisten entre páginas</li>
+            </ul>
+        </div>
+    </div>
+    <script src="procesar.js"></script>
+</body>
+</html>
